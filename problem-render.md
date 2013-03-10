@@ -1,4 +1,5 @@
 ##Problem Render
+There's some question if this should live in the WeBWorK API or some PG API or both
 ###get rendered (id, path, code)  
 ```
 GET /problem
