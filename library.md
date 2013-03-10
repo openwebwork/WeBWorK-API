@@ -1,4 +1,5 @@
 ##Library
+This may also live in another API, where each library exists as it's own database and has it's own address
 ###get problems by (everything)  
 ```
 GET /library
