@@ -1,32 +1,52 @@
-##User
+#User
 (CRUD)  
-###get all users  
+##get all users  
 ```
 GET /users
 ```
-###get all courses  
+**returns** \[[User](schema.md/#user)\]  
+**permissions** > _Student_
+
+
+##get all courses  
 ```
 GET /users/:user/courses
 ```
-###get all problem sets in course  
+**returns** \[[Course](schema.md/#course)\]  
+**permissions** > _Student_  || if user==:user then Student
+
+
+##get all problem sets in course  
 ```
 GET /users/:user/:course/sets
 ```
-###get/update a problem set in a course   
+**returns** \[[ProblemSet](schema.md/#problemset)\] or \[[UserSet](schema.md/#userset)\]
+
+
+##get/update a problem set in a course   
 ```
 GET /users/:user/:course/:set
 ```
+**returns** [ProblemSet](schema.md/#problemset) or [UserSet](schema.md/#userset)  
 ```
 POST /users/:user/:course/:set
 ```
-###add(assign)/remove problem set  
+**returns** Success/Failure
+
+
+##add(assign)/remove problem set  
 ```
-POST /users/:user/:course/:set
+PUT /users/:user/:course/:set
 ```
+**returns** Success/Failure  
 ```
 DELETE /users/:user/:course/:set
 ```
-###get grade for a set  
+**returns** Success/Failure  
+
+
+##get grade for a set  
 ```
 GET /users/:user/:course/:set/grade
 ```
+**returns** a Grade (or a number)
