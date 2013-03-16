@@ -1,5 +1,8 @@
 ##Problem Render
-There's some question if this should live in the WeBWorK API or some PG API or both
+This needs to exist in both the webwork server and in PG.  
+The webwork server will request rendering and check answers using PG's API
+The reason for the redundancy is that PG shouldn't care about state when checking answers whereas WeBWorK needs to record attempts etc.
+
 ###get rendered (id, path, code)  
 ```
 GET /problem
