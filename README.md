@@ -20,6 +20,19 @@
 - [Problem Render](problem-render.md)  
 - [Library](library.md)
 
+
+#Database V3.0
+- [Schema](schema.md)
+	- [User](schema.md#user)
+	- [Problem Set](schema.md#problem-set)
+	- [Course](schema.md#course)
+	- [UserSetProperty](schema.md#user-set-property)
+	- [ProblemPool](schema.md#problem-pool)
+	- [Problem](schema.md#problem)
+	- [Libary](schema.md#libary)
+	- [ProblemRender](schema.md#problem-render)
+
+
 ##Authentication
 for requests the require authentication include a token as a parameter
 ```
